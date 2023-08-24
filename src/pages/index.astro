@@ -19,7 +19,10 @@ import FV from '../components/FastView.astro'
           <section>
             <h3>Company</h3>
             <div class="flex">
-              <h4>こんな会社です</h4>
+              <div>
+                <h4>会社概要</h4>
+                <p>~Not found~</p>
+              </div>
               <img src="https://source.unsplash.com/376KN_ISplE" alt="" />
             </div>
           </section>
@@ -31,7 +34,7 @@ import FV from '../components/FastView.astro'
         <div class="flex">
           <img src="/At the office-amico.svg" alt="" />
           <div>
-            <h4>私たちはこんなことに力を注いでいます。</h4>
+            <h4>事業内容</h4>
             <ul>
               <li>WEB制作</li>
               <li>SES事業</li>
@@ -101,7 +104,10 @@ import FV from '../components/FastView.astro'
       img[src='/At the office-amico.svg'],
 			img[src="https://source.unsplash.com/376KN_ISplE"]
       {
-        width: 500px;
+        width: 50%;
+      }
+      .flex > div {
+        width: 50%;
       }
 
       @keyframes anima {
