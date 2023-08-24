@@ -1,0 +1,52 @@
+---
+---
+
+<header class="header">
+  <a href="#"><h1 class="thin">R.tech inc.</h1></a>
+  <nav>
+    <ul>
+      <li><a href="#">採用情報<span>Recruit</span></a></li>
+      <li><a href="#">事業内容<span>About US</span></a></li>
+      <li><a href="#">会社概要<span>Company</span></a></li>
+      <li><a href="#">お問い合わせ<span>Contact</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 3rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    mix-blend-mode: difference;
+  }
+
+  ul {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  li > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  a {
+    display: inline-block;
+  }
+  span {
+    font-size: 0.5rem;
+    font-weight: 100;
+  }
+
+  summary {
+    cursor: pointer;
+    list-style: none;
+  }
+</style>
