@@ -52,77 +52,81 @@ import FV from '../components/FastView.astro'
         </div>
       </section>
       <section>
-        <h4>Blog</h4>
-        <p>私たちのブログ</p>
-        <div class="card">カード</div>
+        <h3>Blog</h3>
+        <div class="card"></div>
       </section>
     </div>
+    <footer>
+      <p>© 2023 R.tech inc.</p>
+    </footer>
+  </div>
+</Layout>
 
-    <style>
-      .gallery {
-        display: grid;
-        place-items: center;
-        height: 100vh;
-        width: 100%;
-        background-color: #808080;
-        background-image: url(/FV.gif);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-blend-mode: multiply;
+<style>
+  .gallery {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #808080;
+    background-image: url(/FV.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
 
-        position: relative;
-      }
+    position: relative;
+  }
 
-      /* test */
+  /* test */
 
-      .item1 {
-        position: absolute;
-        height: 100vh;
-        width: 100%;
-        background-color: #4192d9;
-        animation: anima 0.75s running forwards;
-        z-index: -1;
-      }
-      .item2 {
-        position: absolute;
-        height: 100vh;
-        width: 100%;
-        background-color: #dba507;
-        animation: anima 1.5s running forwards;
-        z-index: -2;
-      }
-      .item3 {
-        position: absolute;
-        height: 100vh;
-        width: 100%;
-        background-color: #f54f57;
-        animation: anima 2.5s running forwards;
-        z-index: -3;
-      }
+  .item1 {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #4192d9;
+    animation: anima 0.75s running forwards;
+    z-index: -1;
+  }
+  .item2 {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #dba507;
+    animation: anima 1.5s running forwards;
+    z-index: -2;
+  }
+  .item3 {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #f54f57;
+    animation: anima 2.5s running forwards;
+    z-index: -3;
+  }
 
-      img[src='/At the office-amico.svg'],
+  img[src='/At the office-amico.svg'],
 			img[src="https://source.unsplash.com/376KN_ISplE"]
-      {
-        width: 50%;
-      }
-      .flex > div {
-        width: 50%;
-      }
+  {
+    width: 50%;
+  }
+  .flex > div {
+    width: 50%;
+  }
 
-      @keyframes anima {
-        /* 上から下へ */
-        0% {
-          clip-path: circle(0);
-        }
+  @keyframes anima {
+    /* 上から下へ */
+    0% {
+      clip-path: circle(0);
+    }
 
-        80% {
-          clip-path: circle(100%);
-        }
-        100% {
-          clip-path: circle(0);
-        }
-        /* 0% {
+    80% {
+      clip-path: circle(100%);
+    }
+    100% {
+      clip-path: circle(0);
+    }
+    /* 0% {
           clip-path: inset(0);
         }
 
@@ -132,16 +136,14 @@ import FV from '../components/FastView.astro'
         100% {
           clip-path: inset(0 100%);
         } */
-      }
+  }
 
-      @keyframes anima2 {
-        from {
-          clip-path: inset(0);
-        }
-        to {
-          clip-path: inset(0 0 0 100%);
-        }
-      }
-    </style>
-  </div>
-</Layout>
+  @keyframes anima2 {
+    from {
+      clip-path: inset(0);
+    }
+    to {
+      clip-path: inset(0 0 0 100%);
+    }
+  }
+</style>
